@@ -22,6 +22,8 @@ initial begin
     $dumpfile("mux4.vcd");
     $dumpvars(0, tb_mux4);
 
+    $display("Laboratorio 1 y 2 de Fodisegua");
+
     din1 = 8'h11;
     din2 = 8'h22;
     din3 = 8'h33;
