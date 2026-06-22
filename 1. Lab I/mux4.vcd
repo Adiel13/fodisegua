@@ -1,0 +1,64 @@
+$date
+	Mon Jun 22 15:08:29 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mux4 $end
+$var wire 8 ! dout [7:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 8 # din1 [7:0] $end
+$var reg 8 $ din2 [7:0] $end
+$var reg 8 % din3 [7:0] $end
+$var reg 8 & din4 [7:0] $end
+$var reg 2 ' select [1:0] $end
+$scope module uut $end
+$var wire 8 ( din1 [7:0] $end
+$var wire 8 ) din2 [7:0] $end
+$var wire 8 * din3 [7:0] $end
+$var wire 8 + din4 [7:0] $end
+$var wire 2 , select [1:0] $end
+$var parameter 32 - WIDTH $end
+$var reg 8 . dout [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 -
+b1000 "
+$end
+#0
+$dumpvars
+b10001 .
+b0 ,
+b1000100 +
+b110011 *
+b100010 )
+b10001 (
+b0 '
+b1000100 &
+b110011 %
+b100010 $
+b10001 #
+b10001 !
+$end
+#10000
+b100010 !
+b100010 .
+b1 '
+b1 ,
+#20000
+b110011 !
+b110011 .
+b10 '
+b10 ,
+#30000
+b1000100 !
+b1000100 .
+b11 '
+b11 ,
+#40000
