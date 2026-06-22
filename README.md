@@ -3,6 +3,8 @@ Universidad Galileo
 
 Universidad de San Carlos de Guatemala
 
+Kevin Lajpop
+
 # Herramientas utilizadas
 Para este laboratorio se utiliza Systemverilog en una Raspberry Pi 4 pero puede ejecutarse en cualquier plataforma que cuente con Systemverilog
 
