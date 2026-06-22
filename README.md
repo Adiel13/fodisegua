@@ -9,15 +9,14 @@ Kevin Lajpop
 Para este laboratorio se utiliza Systemverilog en una Raspberry Pi 4 pero puede ejecutarse en cualquier plataforma que cuente con Systemverilog
 
 # Laboratorio 1
-Creación de un multiplexor de 4x1, como se muestra en la siguiente imagen:
+Creación de un multiplexor de 4x1 como se muestra en la siguiente imagen:
 
 ![alt text](image.png)
 
-y se solicita que se utilice el módulo de pre-establecido:
-
-![alt text](image-1.png)
-
 la solución de este laboratorio está en la carpeta 1. Lab I/lab1.sv
+
+Creación de un banco de registros como se muestra en la siguiente imagen:
+![alt text](image-2.png)
 
 # Laboratorio 2
 Realizar el test de lo realizado en el laboratorio 1. Por ejemplo:
