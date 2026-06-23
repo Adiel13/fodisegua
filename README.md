@@ -47,3 +47,15 @@ select=10 dout=33
 select=11 dout=44
 ../2. Lab II/tb_mux4.sv:44: $finish called at 40000 (1ps)
 ```
+# Laboratorio 3
+
+Se debe de conectar todos los componentes creados en laboratorio 1 para crear un CPU
+
+- mux4
+- registerbank
+- ALU
+- memory
+
+Implementando dos funciones provistas (control y top):
+
+![alt text](image-4.png)
