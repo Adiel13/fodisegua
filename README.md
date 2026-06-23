@@ -27,11 +27,6 @@ la solución de este laboratorio está en la carpeta 1. Lab I/muxregister.sv
 # Laboratorio 2
 Realizar el test de lo realizado en el laboratorio 1. Por ejemplo:
 
-```bash
- iverilog -g2012 -o sim mux4.sv ../2. Lab II/tb_mux4.sv
- ```
- Para probarlo se debe de ejeuctar:
-
  ```bash
 iverilog -g2012 -o sim_mux mux4.sv ../2.\ Lab\ II/tb_mux4.sv 
 ```
