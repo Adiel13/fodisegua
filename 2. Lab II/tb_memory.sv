@@ -33,8 +33,43 @@ initial begin
     memoryWrite = 1;
     memoryRead = 0;
     memoryAddress = 0;
-    memoryWriteData = 16'h0011;
-    $display("memoryWriteData=%b memoryAddress=%0d", memoryWriteData, memoryAddress);
+    memoryWriteData = 16'h666F;
+    
+    @(posedge CLK);
+    #1;
+
+    #10
+    memoryWrite = 1;
+    memoryRead = 0;
+    memoryAddress = 1;
+    memoryWriteData = 16'h6469;
+    
+    @(posedge CLK);
+    #1;
+
+    #10
+    memoryWrite = 1;
+    memoryRead = 0;
+    memoryAddress = 2;
+    memoryWriteData = 16'h7365;
+    
+    @(posedge CLK);
+    #1;
+
+    #10
+    memoryWrite = 1;
+    memoryRead = 0;
+    memoryAddress = 3;
+    memoryWriteData = 16'h6775;
+    
+    @(posedge CLK);
+    #1;
+
+    #10
+    memoryWrite = 1;
+    memoryRead = 0;
+    memoryAddress = 4;
+    memoryWriteData = 16'h0061;
     
     @(posedge CLK);
     #1;
@@ -42,10 +77,32 @@ initial begin
     memoryWrite = 0;
     memoryRead = 1;
     memoryAddress = 0;
-    memoryWriteData = 16'h0011;
-
     #1
-    $display("memoryOutData=%b memoryAddress=%0d", memoryOutData, memoryAddress);
+    $display("memoryOutData=%s memoryAddress=%0d", memoryOutData, memoryAddress);
+    
+    memoryWrite = 0;
+    memoryRead = 1;
+    memoryAddress = 1;
+    #1
+    $display("memoryOutData=%s memoryAddress=%0d", memoryOutData, memoryAddress);
+    
+    memoryWrite = 0;
+    memoryRead = 1;
+    memoryAddress = 2;
+    #1
+    $display("memoryOutData=%s memoryAddress=%0d", memoryOutData, memoryAddress);
+    
+    memoryWrite = 0;
+    memoryRead = 1;
+    memoryAddress = 3;
+    #1
+    $display("memoryOutData=%s memoryAddress=%0d", memoryOutData, memoryAddress);
+    
+    memoryWrite = 0;
+    memoryRead = 1;
+    memoryAddress = 4;
+    #1
+    $display("memoryOutData=%s memoryAddress=%0d", memoryOutData, memoryAddress);
     
     $finish;
 end
