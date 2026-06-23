@@ -1,0 +1,60 @@
+$date
+	Tue Jun 23 12:21:45 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_memory $end
+$var wire 16 ! memoryOutData [15:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 1 # CLK $end
+$var reg 8 $ memoryAddress [7:0] $end
+$var reg 1 % memoryRead $end
+$var reg 1 & memoryWrite $end
+$var reg 16 ' memoryWriteData [15:0] $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 8 ( memoryAddress [7:0] $end
+$var wire 1 % memoryRead $end
+$var wire 1 & memoryWrite $end
+$var wire 16 ) memoryWriteData [15:0] $end
+$var parameter 32 * WIDTH $end
+$var reg 16 + memoryOutData [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 *
+b1000 "
+$end
+#0
+$dumpvars
+b0 +
+b0 )
+b0 (
+b0 '
+0&
+0%
+b0 $
+0#
+b0 !
+$end
+#5000
+1#
+#10000
+0#
+b10001 '
+b10001 )
+1&
+#15000
+1#
+#16000
+b10001 !
+b10001 +
+1%
+0&
+#17000
