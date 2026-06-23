@@ -1,0 +1,50 @@
+$date
+	Tue Jun 23 10:47:33 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_ALU $end
+$var wire 1 ! zero $end
+$var wire 16 " out [15:0] $end
+$var wire 1 # error $end
+$var parameter 32 $ WIDTH $end
+$var reg 8 % in1 [7:0] $end
+$var reg 8 & in2 [7:0] $end
+$var reg 1 ' invalid_data $end
+$var reg 4 ( op [3:0] $end
+$scope module uut $end
+$var wire 8 ) in1 [7:0] $end
+$var wire 8 * in2 [7:0] $end
+$var wire 1 ' invalid_data $end
+$var wire 4 + op [3:0] $end
+$var parameter 32 , WIDTH $end
+$var reg 1 # error $end
+$var reg 16 - out [15:0] $end
+$var reg 1 ! zero $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 ,
+b1000 $
+$end
+#0
+$dumpvars
+b0 -
+b1 +
+b1 *
+b1 )
+b1 (
+x'
+b1 &
+b1 %
+x#
+b0 "
+1!
+$end
+#10000
