@@ -8,6 +8,13 @@ Kevin Lajpop
 # Herramientas utilizadas
 Para este laboratorio se utiliza Systemverilog en una Raspberry Pi 4 pero puede ejecutarse en cualquier plataforma que cuente con Systemverilog
 
+# Despliegue en servidor de synopsis
+Clonar el repositorio en el servidor de synopsis y ejecutar el comando:
+
+ ```bash
+vcs –debug_access+all -kdb –sverilog -full64 <testbench_file.sv> <verilog_file.sv>
+```
+
 # Laboratorio 1
 Creación de un multiplexor de 4x1 como se muestra en la siguiente imagen:
 
@@ -28,7 +35,7 @@ la solución de este laboratorio está en la carpeta 1. Lab I/muxregister.sv
 Realizar el test de lo realizado en el laboratorio 1. Por ejemplo:
 
  ```bash
-iverilog -g2012 -o sim_mux mux4.sv ../2.\ Lab\ II/tb_mux4.sv 
+iverilog -g2012 -o sim_mux mux4.sv ../2.Lab/tb_mux4.sv 
 ```
 
 Para probar la salida se debe de ejecutar
@@ -51,11 +58,15 @@ select=11 dout=44
 
 Se debe de conectar todos los componentes creados en laboratorio 1 para crear un CPU
 
-- mux4
-- registerbank
-- ALU
-- memory
+- [mux4](/1.Lab/mux4.sv)
+- [registerbank](/1.Lab/registerbank.sv)
+- [ALU](/1.Lab/alu.sv)
+- [memory](/1.Lab/memory.sv)
 
 Implementando dos funciones provistas (control y top):
 
 ![alt text](image-4.png)
+
+En el laboratorio 3 se utilizó instancias de los modulos anteriormente realizados.
+
+En el archivo [module.sv](3.Lab/module.sv)
