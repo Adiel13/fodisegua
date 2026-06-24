@@ -1,0 +1,406 @@
+$date
+	Wed Jun 24 10:50:08 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top $end
+$var wire 1 ! zero $end
+$var wire 1 " error $end
+$var wire 8 # dout_low [7:0] $end
+$var wire 8 $ dout_high [7:0] $end
+$var wire 1 % cpu_rdy $end
+$var parameter 32 & WIDTH $end
+$var reg 1 ' CLK $end
+$var reg 7 ( cmdin [6:0] $end
+$var reg 8 ) din_1 [7:0] $end
+$var reg 8 * din_2 [7:0] $end
+$var reg 8 + din_3 [7:0] $end
+$var reg 1 , rst $end
+$scope module uut $end
+$var wire 4 - alu_opcode [3:0] $end
+$var wire 1 ' clk $end
+$var wire 7 . cmdin [6:0] $end
+$var wire 8 / din_1 [7:0] $end
+$var wire 8 0 din_2 [7:0] $end
+$var wire 8 1 din_3 [7:0] $end
+$var wire 1 " error $end
+$var wire 1 2 p_error $end
+$var wire 1 , rst $end
+$var wire 1 ! zero $end
+$var wire 1 3 selmux2 $end
+$var wire 8 4 reg_b_out [7:0] $end
+$var wire 8 5 reg_a_out [7:0] $end
+$var wire 4 6 opcode [3:0] $end
+$var wire 1 7 nvalid_data $end
+$var wire 8 8 memory_address [7:0] $end
+$var wire 1 9 memoryWrite $end
+$var wire 1 : memoryRead $end
+$var wire 16 ; mem_out [15:0] $end
+$var wire 2 < in_select_b [1:0] $end
+$var wire 2 = in_select_a [1:0] $end
+$var wire 16 > final_out [15:0] $end
+$var wire 8 ? dout_low [7:0] $end
+$var wire 8 @ dout_high [7:0] $end
+$var wire 1 A datain_reg_en $end
+$var wire 1 % cpu_rdy $end
+$var wire 1 B aluout_reg_en $end
+$var wire 1 C aluin_reg_en $end
+$var wire 16 D alu_out [15:0] $end
+$var wire 1 E alu_error $end
+$var parameter 32 F WIDTH $end
+$var reg 8 G mux_a_out [7:0] $end
+$var reg 8 H mux_b_out [7:0] $end
+$scope begin genblk1 $end
+$upscope $end
+$scope module alu_inst $end
+$var wire 4 I op [3:0] $end
+$var wire 1 7 invalid_data $end
+$var wire 8 J in2 [7:0] $end
+$var wire 8 K in1 [7:0] $end
+$var parameter 32 L WIDTH $end
+$var reg 1 E error $end
+$var reg 16 M out [15:0] $end
+$var reg 1 ! zero $end
+$upscope $end
+$scope module control_inst $end
+$var wire 1 ' clk $end
+$var wire 7 N cmd_in [6:0] $end
+$var wire 1 2 p_error $end
+$var wire 1 , rst $end
+$var wire 3 O opcode3 [2:0] $end
+$var wire 4 P opcode [3:0] $end
+$var wire 2 Q in_select_b [1:0] $end
+$var wire 2 R in_select_a [1:0] $end
+$var reg 1 C aluin_reg_en $end
+$var reg 1 B aluout_reg_en $end
+$var reg 1 % cpu_rdy $end
+$var reg 1 A datain_reg_en $end
+$var reg 1 : memoryRead $end
+$var reg 1 9 memoryWrite $end
+$var reg 1 7 nvalid_data $end
+$var reg 1 3 selmux2 $end
+$upscope $end
+$scope module memory_inst $end
+$var wire 1 ' clk $end
+$var wire 8 S memoryAddress [7:0] $end
+$var wire 1 : memoryRead $end
+$var wire 1 9 memoryWrite $end
+$var wire 16 T memoryWriteData [15:0] $end
+$var wire 3 U addr [2:0] $end
+$var parameter 32 V WIDTH $end
+$var reg 16 W memoryOutData [15:0] $end
+$upscope $end
+$scope module output_reg $end
+$var wire 1 ' clk $end
+$var wire 16 X in [15:0] $end
+$var wire 1 , rst $end
+$var wire 1 B wr_en $end
+$var parameter 64 Y WIDTH $end
+$var reg 16 Z out [15:0] $end
+$upscope $end
+$scope module reg_a $end
+$var wire 1 ' clk $end
+$var wire 8 [ in [7:0] $end
+$var wire 1 , rst $end
+$var wire 1 C wr_en $end
+$var parameter 32 \ WIDTH $end
+$var reg 8 ] out [7:0] $end
+$upscope $end
+$scope module reg_b $end
+$var wire 1 ' clk $end
+$var wire 8 ^ in [7:0] $end
+$var wire 1 , rst $end
+$var wire 1 A wr_en $end
+$var parameter 32 _ WIDTH $end
+$var reg 8 ` out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 _
+b1000 \
+b10000 Y
+b1000 V
+b1000 L
+b1000 F
+b1000 &
+$end
+#0
+$dumpvars
+b0 `
+b0 ^
+b0 ]
+b0 [
+b0 Z
+b0 X
+b0 W
+b0 U
+b0 T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+0E
+b0 D
+0C
+0B
+0A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+0:
+09
+b0 8
+17
+b0 6
+b0 5
+b0 4
+03
+02
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+1,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+0%
+b0 $
+b0 #
+0"
+1!
+$end
+#5000
+1'
+#10000
+0'
+#12000
+b1 <
+b1 Q
+b101 H
+b101 ^
+b11 G
+b11 [
+1B
+1A
+1C
+07
+1%
+b1000 (
+b1000 .
+b1000 N
+b111 +
+b111 1
+b101 *
+b101 0
+b11 )
+b11 /
+0,
+#15000
+b1000 >
+b1000 X
+b11 U
+0!
+b1000 D
+b1000 M
+b1000 T
+b11 8
+b11 S
+b11 5
+b11 K
+b11 ]
+b101 4
+b101 J
+b101 `
+1'
+#20000
+0'
+#25000
+b1000 #
+b1000 ?
+b1000 Z
+b101 >
+b101 X
+b111 H
+b111 ^
+b101 D
+b101 M
+b101 T
+19
+1B
+1A
+1C
+b10 <
+b10 Q
+b110 -
+b110 I
+b110 6
+b110 P
+b110 O
+b10110 (
+b10110 .
+b10110 N
+1'
+#30000
+0'
+#35000
+b111 >
+b111 X
+b111 D
+b111 M
+b111 T
+b101 #
+b101 ?
+b111 4
+b111 J
+b111 `
+b101 Z
+1'
+#40000
+0'
+#45000
+b111 #
+b111 ?
+b111 Z
+b111 >
+b111 X
+b111 ;
+b111 W
+b11 H
+b11 ^
+13
+1:
+1B
+09
+1A
+1C
+b0 <
+b0 Q
+b101 -
+b101 I
+b101 6
+b101 P
+b101 O
+b101 (
+b101 .
+b101 N
+1'
+#50000
+0'
+#55000
+b11 D
+b11 M
+b11 T
+b11 4
+b11 J
+b11 `
+1'
+#60000
+0'
+#65000
+b1 >
+b1 X
+b0 ;
+b0 W
+b1 D
+b1 M
+b1 T
+1B
+03
+0:
+1A
+1C
+b1 <
+b1 Q
+b11 -
+b11 I
+b11 6
+b11 P
+b11 O
+b10 H
+b10 ^
+b1000 G
+b1000 [
+b1011 (
+b1011 .
+b1011 N
+b10 *
+b10 0
+b1000 )
+b1000 /
+1'
+#70000
+0'
+#75000
+b100 >
+b100 X
+b0 U
+b100 D
+b100 M
+b100 T
+b1 #
+b1 ?
+b1000 8
+b1000 S
+b1000 5
+b1000 K
+b1000 ]
+b10 4
+b10 J
+b10 `
+b1 Z
+1'
+#80000
+0'
+#85000
+b100 #
+b100 ?
+b100 Z
+b0 H
+b0 ^
+b0 *
+b0 0
+1'
+#90000
+0'
+#95000
+b0 >
+b0 X
+1!
+1"
+1E
+b0 D
+b0 M
+b0 T
+b0 4
+b0 J
+b0 `
+1'
+#100000
+0'
+#105000
+b0 #
+b0 ?
+b0 Z
+1'
