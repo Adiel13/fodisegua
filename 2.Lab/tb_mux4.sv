@@ -19,8 +19,8 @@ mux4 #(WIDTH) uut (
 
 initial begin
 
-    $dumpfile("mux4.vcd");
-    $dumpvars(0, tb_mux4);
+    $fsdbDumpfile("mux4.fsdb");
+    $fsdbDumpvars(0, tb_mux4);
 
     din1 = 8'h11;
     din2 = 8'h22;
