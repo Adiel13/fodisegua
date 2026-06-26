@@ -18,11 +18,14 @@ always_ff @(posedge clk) begin
     end
 end
 
-always_comb begin
+// Synchronous read: register the output on the clock edge to avoid
+// combinational-race timing issues and to make the output transitions
+// observable at clock boundaries (improves toggle/cycle coverage).
+always_ff @(posedge clk) begin
     if (memoryRead) begin
-        memoryOutData = mem[addr];
+        memoryOutData <= mem[addr];
     end else begin
-        memoryOutData = '0;
+        memoryOutData <= '0;
     end
 end
 endmodule
