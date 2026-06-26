@@ -21,9 +21,9 @@ memory #(WIDTH) uut(
 );
 
 initial begin
-    $dumpfile("memory.vcd");
-    $dumpvars(0, tb_memory);
-    
+    $fsdbDumpfile("memory.fsdb");
+    $fsdbDumpvars(0, tb_memory);
+
     memoryWrite = 0;
     memoryRead = 0;
     memoryAddress = 0;

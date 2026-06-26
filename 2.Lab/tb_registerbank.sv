@@ -22,8 +22,8 @@ register_bank #(WIDTH) uut (
 );
 
 initial begin
-    $dumpfile("registerbank.vcd");
-    $dumpvars(0, tb_registerbank);
+    $fsdbDumpfile("registerbank.fsdb");
+    $fsdbDumpvars(0, tb_registerbank);
 
     // Reset
     rst   = 1;

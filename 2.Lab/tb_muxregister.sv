@@ -26,8 +26,8 @@ mux4_registered #(WIDTH) uut(
 );
 
 initial begin
-    $dumpfile("muxregister.vcd");
-    $dumpvars(0, tb_muxregister);
+    $fsdbDumpfile("muxregister.fsdb");
+    $fsdbDumpvars(0, tb_muxregister);
 
     rst = 1;
     wr_en = 0;

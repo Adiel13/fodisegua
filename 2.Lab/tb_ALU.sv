@@ -22,8 +22,8 @@ ALU #(WIDTH) uut (
 );
 
 initial begin
-    $dumpfile("alu.vcd");
-    $dumpvars(0, tb_ALU);
+    $fsdbDumpfile("alu.fsdb");
+    $fsdbDumpvars(0, tb_ALU);
 
     in1 = 8'h01;
     in2 = 8'h01;
