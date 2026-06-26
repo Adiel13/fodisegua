@@ -40,21 +40,23 @@ assign p_error = 1'b0;
 assign alu_opcode = opcode;
 assign error = alu_error;
 
-always_comb begin
-    case (in_select_a)
-        2'b00: mux_a_out = din_1;
-        2'b01: mux_a_out = din_2;
-        2'b10: mux_a_out = din_3;
-        default: mux_a_out = dout_low;
-    endcase
+mux4 #(.WIDTH(WIDTH)) mux_a_inst (
+    .din1(din_1),
+    .din2(din_2),
+    .din3(din_3),
+    .din4(dout_low),
+    .select(in_select_a),
+    .dout(mux_a_out)
+);
 
-    case (in_select_b)
-        2'b00: mux_b_out = din_1;
-        2'b01: mux_b_out = din_2;
-        2'b10: mux_b_out = din_3;
-        default: mux_b_out = dout_low;
-    endcase
-end
+mux4 #(.WIDTH(WIDTH)) mux_b_inst (
+    .din1(din_1),
+    .din2(din_2),
+    .din3(din_3),
+    .din4(dout_low),
+    .select(in_select_b),
+    .dout(mux_b_out)
+);
 
 generate
     if (WIDTH <= 8) begin
